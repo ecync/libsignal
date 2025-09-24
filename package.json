@@ -1,6 +1,6 @@
 {
   "name": "@sky7/libsignal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "End-to-end encryption primitives implementing a Signal-style double ratchet with PreKeys for Node.js",
   "keywords": [
     "signal",
@@ -39,7 +39,7 @@
     "lint:fix": "eslint src/ --ext .js --fix",
     "proto:generate": "pbjs -t static-module -w commonjs -o ./src/WhisperTextProtocol.js ./protos/WhisperTextProtocol.proto",
     "version:patch": "npm version patch",
-    "version:minor": "npm version minor", 
+    "version:minor": "npm version minor",
     "version:major": "npm version major",
     "prepublishOnly": "echo 'Ready to publish'",
     "publish:patch": "npm run version:patch && npm publish",
