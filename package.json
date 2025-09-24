@@ -1,0 +1,24 @@
+{
+  "name": "@sky7/libsignal",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "signal",
+    "whispersystems",
+    "crypto"
+  ],
+  "license": "GPL-3.0",
+  "author": "Eshan Chathuranga",
+  "type": "index.d.ts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "curve25519-js": "^0.0.4",
+    "protobufjs": "^7.5.4"
+  },
+  "devDependencies": {
+    "eslint": "^9.36.0"
+  }
+}
