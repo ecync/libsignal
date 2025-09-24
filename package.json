@@ -1,18 +1,50 @@
 {
   "name": "@sky7/libsignal",
   "version": "1.0.0",
-  "description": "",
+  "description": "End-to-end encryption primitives implementing a Signal-style double ratchet with PreKeys for Node.js",
   "keywords": [
     "signal",
     "whispersystems",
-    "crypto"
+    "crypto",
+    "encryption",
+    "double-ratchet",
+    "prekeys",
+    "e2e"
   ],
   "license": "GPL-3.0",
   "author": "Eshan Chathuranga",
-  "type": "index.d.ts",
   "main": "index.js",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecdevz/-sky7-libsignal.git"
+  },
+  "homepage": "https://github.com/ecdevz/-sky7-libsignal",
+  "bugs": {
+    "url": "https://github.com/ecdevz/-sky7-libsignal/issues"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "src/",
+    "protos/",
+    "README.md",
+    "example.js"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint src/ --ext .js",
+    "lint:fix": "eslint src/ --ext .js --fix",
+    "proto:generate": "pbjs -t static-module -w commonjs -o ./src/WhisperTextProtocol.js ./protos/WhisperTextProtocol.proto",
+    "version:patch": "npm version patch",
+    "version:minor": "npm version minor", 
+    "version:major": "npm version major",
+    "prepublishOnly": "echo 'Ready to publish'",
+    "publish:patch": "npm run version:patch && npm publish",
+    "publish:minor": "npm run version:minor && npm publish",
+    "publish:major": "npm run version:major && npm publish"
   },
   "dependencies": {
     "curve25519-js": "^0.0.4",
