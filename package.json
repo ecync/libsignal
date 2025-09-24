@@ -1,6 +1,6 @@
 {
-  "name": "@sky7/libsignal",
-  "version": "1.0.1",
+  "name": "@ecync/libsignal",
+  "version": "1.0.2",
   "description": "End-to-end encryption primitives implementing a Signal-style double ratchet with PreKeys for Node.js",
   "keywords": [
     "signal",
@@ -17,11 +17,11 @@
   "types": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ecdevz/-sky7-libsignal.git"
+    "url": "git+https://github.com/ecync/libsignal.git"
   },
-  "homepage": "https://github.com/ecdevz/-sky7-libsignal",
+  "homepage": "https://github.com/ecync/libsignal",
   "bugs": {
-    "url": "https://github.com/ecdevz/-sky7-libsignal/issues"
+    "url": "https://github.com/ecync/libsignal/issues"
   },
   "files": [
     "index.js",

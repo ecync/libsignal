@@ -1,17 +1,17 @@
-@sky7/libsignal
+@ecync/libsignal
 ===============
 
 End-to-end encryption primitives implementing a Signal-style double ratchet with PreKeys for Node.js. This package exposes a minimal API for building, persisting, and using sessions to encrypt and decrypt messages.
 
-[![npm version](https://badge.fury.io/js/@sky7%2Flibsignal.svg)](https://www.npmjs.com/package/@sky7/libsignal)
-[![npm downloads](https://img.shields.io/npm/dm/@sky7/libsignal.svg)](https://www.npmjs.com/package/@sky7/libsignal)
+[![npm version](https://badge.fury.io/js/@sky7%2Flibsignal.svg)](https://www.npmjs.com/package/@ecync/libsignal)
+[![npm downloads](https://img.shields.io/npm/dm/@sky7/libsignal.svg)](https://www.npmjs.com/package/@ecync/libsignal)
 [![license](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Node.js](https://img.shields.io/node/v/@sky7/libsignal.svg)](https://nodejs.org)
 
 
 Overview
 --------
-`@sky7/libsignal` provides the core building blocks of a Signal-like protocol:
+`@ecync/libsignal` provides the core building blocks of a Signal-like protocol:
 
 - Double Ratchet state management (`SessionRecord`, `SessionCipher`).
 - Asynchronous session bootstrapping with PreKeys (`SessionBuilder`).
@@ -36,11 +36,11 @@ Installation
 Install with your preferred package manager:
 
 ```powershell
-npm install @sky7/libsignal
+npm install @ecync/libsignal
 # or
-yarn add @sky7/libsignal
+yarn add @ecync/libsignal
 # or
-pnpm add @sky7/libsignal
+pnpm add @ecync/libsignal
 ```
 
 Recommended: Node.js 14+.
@@ -56,7 +56,7 @@ const {
   ProtocolAddress,
   SessionBuilder,
   SessionCipher
-} = require('@sky7/libsignal');
+} = require('@ecync/libsignal');
 
 // For a complete working example, see example.js// 1) Your long-term identity + registration id
 const ourIdentity = keyhelper.generateIdentityKeyPair();
